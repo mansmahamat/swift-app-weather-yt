@@ -11,6 +11,7 @@
 		30E203402BDBDC6500141AC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2033F2BDBDC6500141AC7 /* ContentView.swift */; };
 		30E203422BDBDC6700141AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E203412BDBDC6700141AC7 /* Assets.xcassets */; };
 		30E203462BDBDC6700141AC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E203452BDBDC6700141AC7 /* Preview Assets.xcassets */; };
+		30E2034E2BDBDD4A00141AC7 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2034D2BDBDD4A00141AC7 /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		30E203412BDBDC6700141AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30E203432BDBDC6700141AC7 /* swift_app_weather_yt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swift_app_weather_yt.entitlements; sourceTree = "<group>"; };
 		30E203452BDBDC6700141AC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30E2034D2BDBDD4A00141AC7 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		30E2033C2BDBDC6500141AC7 /* swift-app-weather-yt */ = {
 			isa = PBXGroup;
 			children = (
+				30E2034C2BDBDD3200141AC7 /* ViewModel */,
 				30E2033D2BDBDC6500141AC7 /* swift_app_weather_ytApp.swift */,
 				30E2033F2BDBDC6500141AC7 /* ContentView.swift */,
 				30E203412BDBDC6700141AC7 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				30E203452BDBDC6700141AC7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30E2034C2BDBDD3200141AC7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				30E2034D2BDBDD4A00141AC7 /* WeatherData.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E203402BDBDC6500141AC7 /* ContentView.swift in Sources */,
+				30E2034E2BDBDD4A00141AC7 /* WeatherData.swift in Sources */,
 				30E2033E2BDBDC6500141AC7 /* swift_app_weather_ytApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +286,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Provide location for weather based on the location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Provide location for weather based on the location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +326,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Provide location for weather based on the location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Provide location for weather based on the location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
